@@ -1,5 +1,4 @@
-import Login from "./componets/context/login.jsx"
-
+import UseIdX from "./componets/hooks/UseId"
 
 
 
@@ -7,7 +6,9 @@ const App = () => {
   
   return (
     <div>
-     <Login/>      
+      <UseIdX/>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsa.</p>
+      <UseIdX/>
     </div>
   )
 }
