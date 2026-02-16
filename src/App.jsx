@@ -1,15 +1,13 @@
-import UseIdX from "./componets/hooks/UseId"
-
+import './app.css'
+import Shop from './zustand'
 
 
 const App = () => {
   
   return (
-    <div>
-      <UseIdX/>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsa.</p>
-      <UseIdX/>
-    </div>
+   <div>
+    <Shop/>
+   </div>
   )
 }
 
