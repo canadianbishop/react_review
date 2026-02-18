@@ -1,0 +1,25 @@
+{
+      "jobs" : [
+            {
+                  "id": 1,
+                  "title": "sr. bishop dev",
+                  "location": "lagos nig"
+            },
+            {
+                  "id": 2,
+                  "title": "sr. fuckeddd dev",
+                  "location": "ibadan nig"
+            },
+            {
+                  "id": 3,
+                  "title": "sr. fuck dev",
+                  "location": "kano nig"
+            },
+            {
+                  "id": 4,
+                  "title": "sr. mastor",
+                  "location": "akure nig"
+            }
+
+      ]
+}

@@ -1,8 +1,20 @@
-import {create} from 'zustand';
+ import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
-export const useCartStore = create((set)=> ({
-      cart: [],
-      addToCart:(product)=>set((state)=> ({cart: [...state.cart, product]}))  ,
-      removeFromCart:(productId) => set((state) => ({cart:state.cart.filter(product => product.id !== productId)})),
-      clearCart: ()=> set({cart: []})
-}));
+export const useStoreCart = create(persist(
+      (set)=> ({
+            cart: [], 
+            addItem: (product) => set((state)=> ({
+                  cart: [...state.cart, product]
+            })),
+
+            deleteItem: (id) => set((state) => ({
+                  cart: state.cart.filter(item => item.id !== id) 
+            })),
+            clearCart:()=> set({cart: []})
+      }), 
+      {
+            name: 'cart-items'
+      }
+))
+

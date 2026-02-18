@@ -1,16 +1,12 @@
-import { useState } from "react";
-import ProductsList from "./ProductsList";
-import { products } from "./produsts";
+import ProductsList from "./ProductsList.jsx";
 import Cart from "./Cart";
 
 const Shop = () => {
 
-      const [users, setUsers]= useState([{name: }])
 
   return (
     <div>
-      <ProductsList products={products} />
-      <Cart/>
+      <ProductsList/>
     </div>
   );
 };
